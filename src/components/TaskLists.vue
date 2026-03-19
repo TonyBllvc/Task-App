@@ -41,12 +41,17 @@
 
     .list-enter-active,
     .list-leave-active {
-        transition: all 1.0 ease;
+        transition: all 1.0s ease;
     }
 
     .list-enter-from,
     .list-leave-to {
         opacity: 0;
         transform: translateX(300px);
+    }
+
+    /* Important: takes leaving items out of layout flow */
+    .list-leave-active {
+        position: absolute;
     }
 </style>

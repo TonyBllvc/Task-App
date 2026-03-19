@@ -5,3 +5,5 @@ export interface TaskType {
     title: string | null;
     done: boolean;
 }
+
+export type TaskFilter = "all" | "todo" | "done";
